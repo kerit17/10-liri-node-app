@@ -7,7 +7,7 @@ var spotify = new Spotify(key.spotifyKeys);
 var request = require("request");
 var fs = require("fs");
 var x = "";
-var random = require("./random.txt");
+var random = fs.readFile("./random.txt");
 
 //variables: api calls
 var api = process.argv[2];
